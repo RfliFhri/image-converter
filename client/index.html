@@ -146,10 +146,13 @@
         });
 
         try {
-          const response = await fetch("http://localhost:3000/convert", {
-            method: "POST",
-            body: formData,
-          });
+          const response = await fetch(
+            "https://image-converter-eight-kappa.vercel.app/convert",
+            {
+              method: "POST",
+              body: formData,
+            }
+          );
 
           const blob = await response.blob();
 
