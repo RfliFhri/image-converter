@@ -1,4 +1,4 @@
-import { convertToWebp } from "../services/imageService.js";
+import { convertToWebp } from "../service/imageService.js";
 import archiver from "archiver";
 
 export const convertImages = async (req, res) => {
